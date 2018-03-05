@@ -1,0 +1,16 @@
+server.port=8089
+spring.application.name=instruments
+
+#Eureka 
+eureka.client.registerWithEureka=true
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+
+#DataBase
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:postgresql://localhost:5433/dbdistribuida
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults = false
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQL9Dialect
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.datasource.username=postgres
+spring.datasource.password=grovestreet
+hibernate.jdbc.lob.non_contextual_creation=true
